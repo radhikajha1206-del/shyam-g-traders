@@ -4,197 +4,235 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SHYAM-G TRADERS | Premium Traditional Suits</title>
+<title>SHYAM-G TRADERS | Premium Traditional Wear</title>
 
 <style>
+
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
     scroll-behavior:smooth;
 }
 
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fff4ed;
-    color:#171717;
+    font-family:Georgia, "Times New Roman", serif;
+    background:#fff7f2;
+    color:#1b1718;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
+
 header{
-    background:#8f1235;
-    color:white;
+    background:#111111;
+    color:#fff7f2;
     text-align:center;
-    padding:45px 18px;
+    padding:55px 20px 45px;
+    border-bottom:4px solid #a61b3c;
 }
 
-header h1{
-    margin:0;
+.brand{
     font-size:42px;
+    letter-spacing:5px;
+    font-weight:bold;
+}
+
+.tagline{
+    margin-top:12px;
+    color:#f6c7b5;
+    font-family:Arial,sans-serif;
+    font-size:15px;
     letter-spacing:2px;
 }
 
-header p{
-    margin:12px 0 0;
-    font-size:17px;
-}
+/* ================= NAVIGATION ================= */
 
-/* NAVIGATION */
 nav{
     position:sticky;
     top:0;
-    z-index:100;
-    background:#111111;
-    padding:15px 10px;
+    z-index:1000;
+    background:#a61b3c;
     text-align:center;
+    padding:15px 10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
 
 nav a{
-    color:#ffd8c8;
+    color:white;
     text-decoration:none;
-    margin:0 14px;
+    margin:0 18px;
+    font-family:Arial,sans-serif;
+    font-size:14px;
     font-weight:bold;
-    font-size:15px;
+    letter-spacing:1px;
 }
 
 nav a:hover{
-    color:white;
+    color:#ffd8c8;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
     padding:80px 20px;
-    background:linear-gradient(135deg,#fff4ed,#f8c7b3);
+    background:
+        linear-gradient(rgba(255,247,242,0.88),rgba(248,199,179,0.92));
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.small-title{
+    color:#a61b3c;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    letter-spacing:4px;
+    font-weight:bold;
+    margin-bottom:18px;
 }
 
 .hero h2{
-    color:#8f1235;
-    font-size:40px;
-    margin:0 0 15px;
+    font-size:52px;
+    line-height:1.15;
+    color:#171414;
+    margin-bottom:22px;
+}
+
+.hero h2 span{
+    color:#a61b3c;
 }
 
 .hero p{
-    max-width:680px;
+    font-family:Arial,sans-serif;
+    font-size:17px;
+    line-height:1.8;
+    max-width:650px;
     margin:auto;
-    line-height:1.7;
-    font-size:18px;
+    color:#4d4141;
 }
 
-.button{
+.hero-button{
     display:inline-block;
-    margin-top:25px;
-    padding:14px 30px;
-    background:#8f1235;
+    margin-top:32px;
+    padding:15px 35px;
+    background:#a61b3c;
     color:white;
     text-decoration:none;
-    border-radius:30px;
+    border-radius:3px;
+    font-family:Arial,sans-serif;
     font-weight:bold;
+    letter-spacing:1px;
     transition:0.3s;
 }
 
-.button:hover{
+.hero-button:hover{
     background:#111111;
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 }
 
-/* COLLECTION */
+/* ================= COLLECTION ================= */
+
 .collection{
-    padding:65px 18px;
+    padding:85px 20px;
+    background:#fff7f2;
     text-align:center;
-    background:#fff4ed;
+}
+
+.section-label{
+    color:#a61b3c;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:3px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
 .collection h2{
-    color:#8f1235;
-    font-size:32px;
-    margin-bottom:40px;
+    font-size:38px;
+    color:#171414;
+    margin-bottom:12px;
 }
 
+.section-text{
+    font-family:Arial,sans-serif;
+    color:#665858;
+    margin-bottom:50px;
+}
+
+/* CARDS */
+
 .suit-container{
+    max-width:1150px;
+    margin:auto;
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:28px;
-    max-width:1100px;
-    margin:auto;
+    gap:30px;
 }
 
 .suit-card{
-    background:#ffffff;
-    border:1px solid #f0c9bb;
-    border-radius:20px;
-    padding:15px;
-    box-shadow:0 8px 25px rgba(80,20,20,0.12);
-    transition:0.3s;
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    border:1px solid #ead7cf;
+    box-shadow:0 10px 30px rgba(50,20,20,0.10);
+    transition:0.35s;
 }
 
 .suit-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(80,20,20,0.20);
+    box-shadow:0 18px 40px rgba(50,20,20,0.18);
 }
 
 .suit-card img{
     width:100%;
-    height:360px;
+    height:380px;
     object-fit:cover;
-    border-radius:15px;
+    display:block;
+}
+
+.card-content{
+    padding:25px 20px 28px;
 }
 
 .suit-card h3{
-    color:#8f1235;
-    font-size:21px;
-    margin:18px 0 8px;
+    color:#a61b3c;
+    font-size:23px;
+    margin-bottom:12px;
 }
 
 .suit-card p{
-    line-height:1.5;
-    margin:8px 0;
+    font-family:Arial,sans-serif;
+    color:#5d5151;
+    font-size:14px;
+    line-height:1.6;
+    margin:6px 0;
 }
 
-/* ABOUT */
-.about{
-    background:#111111;
-    color:#ffe4d7;
-    text-align:center;
-    padding:60px 20px;
-}
-
-.about h2{
-    color:#f8b9a4;
-    font-size:32px;
-    margin-bottom:30px;
-}
-
-.about p{
-    font-size:17px;
-    margin:14px;
-}
-
-/* CONTACT */
-.contact{
-    background:#f8c7b3;
-    text-align:center;
-    padding:60px 20px;
-}
-
-.contact h2{
-    color:#8f1235;
-    font-size:32px;
-}
-
-.contact p{
-    font-size:17px;
+.details{
+    margin-top:15px;
+    padding-top:15px;
+    border-top:1px solid #ead7cf;
 }
 
 /* WHATSAPP */
+
 .whatsapp{
-    background:#8f1235;
-    color:white;
-    padding:15px 32px;
-    border-radius:30px;
     display:inline-block;
+    margin-top:20px;
+    padding:12px 22px;
+    background:#a61b3c;
+    color:white;
     text-decoration:none;
+    border-radius:4px;
+    font-family:Arial,sans-serif;
+    font-size:13px;
     font-weight:bold;
-    margin-top:15px;
     transition:0.3s;
 }
 
@@ -202,44 +240,127 @@ nav a:hover{
     background:#111111;
 }
 
-/* FOOTER */
-footer{
+/* ================= ABOUT ================= */
+
+.about{
     background:#111111;
-    color:#f8c7b3;
+    color:#fff7f2;
     text-align:center;
-    padding:25px 15px;
+    padding:85px 20px;
 }
 
-/* MOBILE */
-@media(max-width:800px){
+.about h2{
+    color:#f6c7b5;
+    font-size:36px;
+    margin-bottom:35px;
+}
 
-    header h1{
+.about-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.about p{
+    font-family:Arial,sans-serif;
+    color:#eadbd6;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.feature{
+    width:180px;
+}
+
+.feature-icon{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.feature h3{
+    color:#f6c7b5;
+    font-size:16px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    text-align:center;
+    padding:85px 20px;
+    background:#f6c7b5;
+}
+
+.contact h2{
+    color:#111111;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.contact p{
+    font-family:Arial,sans-serif;
+    color:#443737;
+    margin:10px;
+}
+
+.contact-button{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 32px;
+    background:#a61b3c;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+}
+
+.contact-button:hover{
+    background:#111111;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111111;
+    color:#f6c7b5;
+    text-align:center;
+    padding:30px 15px;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+footer strong{
+    color:white;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:850px){
+
+    .brand{
         font-size:31px;
-    }
-
-    header p{
-        font-size:15px;
-    }
-
-    nav{
-        padding:13px 5px;
+        letter-spacing:3px;
     }
 
     nav a{
-        margin:0 6px;
-        font-size:13px;
+        margin:0 7px;
+        font-size:12px;
     }
 
     .hero{
-        padding:60px 18px;
+        min-height:450px;
+        padding:65px 20px;
     }
 
     .hero h2{
-        font-size:30px;
-    }
-
-    .hero p{
-        font-size:16px;
+        font-size:38px;
     }
 
     .suit-container{
@@ -248,159 +369,418 @@ footer{
     }
 
     .suit-card img{
-        height:430px;
+        height:450px;
     }
 
-    .collection h2{
-        font-size:28px;
+    .features{
+        gap:30px;
     }
 }
 
-@media(max-width:400px){
+@media(max-width:450px){
+
+    header{
+        padding:40px 15px;
+    }
+
+    .brand{
+        font-size:25px;
+    }
+
+    .tagline{
+        font-size:11px;
+        letter-spacing:1px;
+    }
+
+    nav{
+        padding:13px 4px;
+    }
 
     nav a{
         margin:0 4px;
-        font-size:12px;
+        font-size:11px;
+    }
+
+    .hero h2{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .collection h2,
+    .about h2,
+    .contact h2{
+        font-size:29px;
     }
 
     .suit-card img{
-        height:380px;
+        height:390px;
     }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-    <h1>SHYAM-G TRADERS</h1>
-    <p>Premium Traditional Suits • Elegant Designs • Beautiful Colours</p>
+
+    <div class="brand">
+        SHYAM-G TRADERS
+    </div>
+
+    <div class="tagline">
+        TRADITIONAL WEAR • ELEGANT DESIGNS • TIMELESS STYLE
+    </div>
+
 </header>
 
+
+<!-- NAVIGATION -->
+
 <nav>
-    <a href="#home">Home</a>
-    <a href="#collection">Collection</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+
+    <a href="#home">HOME</a>
+    <a href="#collection">COLLECTION</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+
 </nav>
+
+
+<!-- HERO -->
 
 <section class="hero" id="home">
 
-    <h2>Elegance That Speaks For Itself</h2>
+    <div class="hero-content">
 
-    <p>
-        Discover our beautiful collection of traditional and
-        designer suits, carefully selected for weddings,
-        festivals, parties and every special occasion.
-    </p>
-
-    <a href="#collection" class="button">
-        Explore Collection
-    </a>
-
-</section>
-
-<section class="collection" id="collection">
-
-    <h2>Our Premium Collection</h2>
-
-    <div class="suit-container">
-
-        <div class="suit-card">
-         <img src="suit1.jpg/Screenshot%202026-08-25%20165748.png">
-            <h3>Traditional Suit</h3>
-            <p>Elegant traditional design for special occasions.</p>
-            <p><b>Sizes:</b> S, M, L, XL</p>
-            <p><b>Price:</b> Contact Us</p>
-
-            <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Traditional%20Suit." class="whatsapp">
-                💬 Enquire on WhatsApp
-            </a>
+        <div class="small-title">
+            SHYAM-G TRADERS
         </div>
 
-        <div class="suit-card">
-           <img src="suit2.jgp/Screenshot%202026-08-25%20165748.png">
-            <h3>Designer Suit</h3>
-            <p>Beautiful designer style with an elegant premium look.</p>
-            <p><b>Sizes:</b> S, M, L, XL</p>
-            <p><b>Price:</b> Contact Us</p>
+        <h2>
+            Tradition With<br>
+            <span>Timeless Elegance</span>
+        </h2>
 
-            <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Designer%20Suit." class="whatsapp">
-                💬 Enquire on WhatsApp
-            </a>
-        </div>
+        <p>
+            Discover our carefully selected collection of
+            traditional and designer suits, created for
+            weddings, festivals, celebrations and every
+            special moment.
+        </p>
 
-        <div class="suit-card">
-         <img src="suit3.jpg/Screenshot%202026-08-25%20165807.png">
-            <h3>Party Wear Suit</h3>
-            <p>Perfect collection for parties, weddings and celebrations.</p>
-            <p><b>Sizes:</b> S, M, L, XL</p>
-            <p><b>Price:</b> Contact Us</p>
+        <a href="#collection" class="hero-button">
+            EXPLORE COLLECTION
+        </a>
 
-            <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Party%20Wear%20Suit." class="whatsapp">
-                💬 Enquire on WhatsApp
-            </a>
-        </div>
-        
-        <div class="suit-card">
-            <img src="suit4.jpg/Screenshot%202026-08-26%20185012.png">
-            <h3>Festive Suit</h3>
-            <p>Beautiful style perfect for festivals and celebrations.</p>
-            <p><b>Sizes:</b> S, M, L, XL</p>
-            <p><b>Price:</b> Contact Us</p>
-
-            <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Festive%20Suit." class="whatsapp">
-                💬 Enquire on WhatsApp
-            </a>
-        </div>
-
-        <div class="suit-card">
-            <img src="suit5.jpg/Screenshot%202026-08-26%20184956.png">
-            <h3>Elegant Suit</h3>
-            <p>Stylish and elegant suit for every special occasion.</p>
-            <p><b>Sizes:</b> S, M, L, XL</p>
-            <p><b>Price:</b> Contact Us</p>
-
-            <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Elegant%20Suit." class="whatsapp">
-                💬 Enquire on WhatsApp
-            </a>
-        </div>
     </div>
 
 </section>
 
-<section class="about" id="about">
 
-    <h2>Why Choose SHYAM-G TRADERS?</h2>
+<!-- COLLECTION -->
 
-    <p>✨ Premium Traditional Designs</p>
-    <p>🎨 Multiple Colour Options</p>
-    <p>📏 Different Sizes Available</p>
-    <p>❤️ Styles For Every Special Occasion</p>
+<section class="collection" id="collection">
+
+    <div class="section-label">
+        OUR COLLECTION
+    </div>
+
+    <h2>
+        Featured Suits
+    </h2>
+
+    <p class="section-text">
+        Elegant designs • Beautiful colours • Multiple sizes
+    </p>
+
+
+    <div class="suit-container">
+
+
+        <!-- SUIT 1 -->
+
+        <div class="suit-card">
+
+            <img src="suit1.jpg/Screenshot%202026-08-25%20165748.png">
+
+            <div class="card-content">
+
+                <h3>Traditional Suit</h3>
+
+                <p>
+                    Elegant traditional design for
+                    special occasions.
+                </p>
+
+                <div class="details">
+
+                    <p><b>Sizes:</b> S, M, L, XL</p>
+
+                    <p><b>Price:</b> Contact Us</p>
+
+                </div>
+
+                <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Traditional%20Suit."
+                   class="whatsapp">
+                    💬 ENQUIRE ON WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUIT 2 -->
+
+        <div class="suit-card">
+
+            <img src="suit2.jgp/Screenshot%202026-08-25%20165748.png">
+
+            <div class="card-content">
+
+                <h3>Designer Suit</h3>
+
+                <p>
+                    Beautiful designer style with
+                    an elegant premium look.
+                </p>
+
+                <div class="details">
+
+                    <p><b>Sizes:</b> S, M, L, XL</p>
+
+                    <p><b>Price:</b> Contact Us</p>
+
+                </div>
+
+                <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Designer%20Suit."
+                   class="whatsapp">
+                    💬 ENQUIRE ON WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUIT 3 -->
+
+        <div class="suit-card">
+
+            <img src="suit3.jpg/Screenshot%202026-08-25%20165807.png">
+
+            <div class="card-content">
+
+                <h3>Party Wear Suit</h3>
+
+                <p>
+                    Perfect collection for parties,
+                    weddings and celebrations.
+                </p>
+
+                <div class="details">
+
+                    <p><b>Sizes:</b> S, M, L, XL</p>
+
+                    <p><b>Price:</b> Contact Us</p>
+
+                </div>
+
+                <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Party%20Wear%20Suit."
+                   class="whatsapp">
+                    💬 ENQUIRE ON WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUIT 4 -->
+
+        <div class="suit-card">
+
+            <img src="suit4.jpg/Screenshot%202026-08-26%20185012.png">
+
+            <div class="card-content">
+
+                <h3>Festive Suit</h3>
+
+                <p>
+                    Beautiful style perfect for
+                    festivals and celebrations.
+                </p>
+
+                <div class="details">
+
+                    <p><b>Sizes:</b> S, M, L, XL</p>
+
+                    <p><b>Price:</b> Contact Us</p>
+
+                </div>
+
+                <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Festive%20Suit."
+                   class="whatsapp">
+                    💬 ENQUIRE ON WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUIT 5 -->
+
+        <div class="suit-card">
+
+            <img src="suit5.jpg/Screenshot%202026-08-26%20184956.png">
+
+            <div class="card-content">
+
+                <h3>Elegant Suit</h3>
+
+                <p>
+                    Stylish and elegant suit for
+                    every special occasion.
+                </p>
+
+                <div class="details">
+
+                    <p><b>Sizes:</b> S, M, L, XL</p>
+
+                    <p><b>Price:</b> Contact Us</p>
+
+                </div>
+
+                <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20am%20interested%20in%20the%20Elegant%20Suit."
+                   class="whatsapp">
+                    💬 ENQUIRE ON WHATSAPP
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 </section>
 
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <h2>
+        The SHYAM-G Experience
+    </h2>
+
+    <div class="about-content">
+
+        <p>
+            At SHYAM-G TRADERS, we bring together
+            traditional elegance and contemporary style
+            to help you find the perfect outfit for every
+            memorable occasion.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">✦</div>
+
+                <h3>
+                    Elegant Designs
+                </h3>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">◆</div>
+
+                <h3>
+                    Beautiful Colours
+                </h3>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">◇</div>
+
+                <h3>
+                    Multiple Sizes
+                </h3>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">♥</div>
+
+                <h3>
+                    Made For You
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
 
-    <h2>Let's Connect</h2>
-
-    <p>📞 Phone: +91 7827587058</p>
-
-    <p>📍 SHYAM-G TRADERS</p>
+    <h2>
+        Let's Connect
+    </h2>
 
     <p>
-        For orders, availability and enquiries,
-        connect with us on WhatsApp.
+        Looking for a beautiful suit?
     </p>
 
-    <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20want%20to%20know%20more%20about%20your%20suits." class="whatsapp">
-        💬 WhatsApp Us
+    <p>
+        Contact SHYAM-G TRADERS for orders,
+        availability and enquiries.
+    </p>
+
+    <p>
+        📞 +91 7827587058
+    </p>
+
+    <a href="https://wa.me/917827587058?text=Hello%20SHYAM-G%20TRADERS,%20I%20want%20to%20know%20more%20about%20your%20suits."
+       class="contact-button">
+        💬 CHAT WITH US ON WHATSAPP
     </a>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-    <p>© 2026 SHYAM-G TRADERS | All Rights Reserved</p>
+
+    <p>
+        © 2026 <strong>SHYAM-G TRADERS</strong>
+        | All Rights Reserved
+    </p>
+
 </footer>
 
 </body>
